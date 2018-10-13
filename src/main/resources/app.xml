@@ -29,6 +29,10 @@
             </props>
         </property>
     </bean>
-
+    <bean id = "entityManager"
+          class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" >
+        <property name="dataSource" ref="dataSource" />
+        <property name="persistenceUnitName" value="NewPersistenceUnit" />
+     </bean>
 
 </beans>

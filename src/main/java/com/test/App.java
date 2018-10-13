@@ -13,7 +13,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
     public static void main(String[] args) {
         User user = new User();
-        user.setUserName("Artem");
+        user.setUserName("Dosya");
         ApplicationContext context = new ClassPathXmlApplicationContext("app.xml");
         SessionFactory factory = (SessionFactory) context.getBean("sessionFactory");
         Session session = factory.openSession();
